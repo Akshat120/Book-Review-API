@@ -11,6 +11,6 @@ app.use(cookieParser());
 app.use("/", router);
 
 
-app.listen(3000, () => {
-    console.log("server started");
+app.listen(process.env.PORT, () => {
+    console.log(`server started at http://localhost:${process.env.PORT}/`);
 });
