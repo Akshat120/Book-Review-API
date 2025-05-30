@@ -122,5 +122,6 @@ All API endpoints are prefixed with `/api`. Authentication is required for write
   - The token is automatically stored in an HTTP cookie named `jwt` (or your configured cookie name) by the server.
 - **User Validation**: Review operations (PUT, DELETE) verify the authenticated user’s ID matches the review’s `user_id`.
 
-
+## ER Diagram
+- https://github.com/Akshat120/Book-Review-API/blob/main/ER_Diagram.png
 
