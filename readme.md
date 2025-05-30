@@ -140,7 +140,7 @@ All API endpoints are prefixed with `/api`. Authentication is required for write
 
 - GET http://localhost:3000/api/books <img width="1075" alt="Screenshot 2025-05-31 at 1 19 33 AM" src="https://github.com/user-attachments/assets/37ba8656-1366-4088-8a87-575f2da289c4" />
 
-- GET http://localhost:3000/api/books <img width="1079" alt="Screenshot 2025-05-31 at 1 28 34 AM" src="https://github.com/user-attachments/assets/712205b7-df7b-4589-8bef-122945bf45b7" />
+- GET http://localhost:3000/api/books/1 <img width="1079" alt="Screenshot 2025-05-31 at 1 28 34 AM" src="https://github.com/user-attachments/assets/712205b7-df7b-4589-8bef-122945bf45b7" />
 
 ## Assumption 
 - All pagination query supports upto 10 items in a single page.
