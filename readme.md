@@ -12,6 +12,9 @@ A RESTful API for managing book reviews, built with Node.js, Express.js, Knex.js
 - [Running the API](#running-the-api)
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
+- [ER Diagram](#er-diagram)
+- [Postman Examples](postman-examples)
+- [Assumption](#assumptions)
 
 ## Project Overview
 BookReviewAPI allows users to manage book reviews through a secure, RESTful interface. It supports creating and retrieving books, posting reviews with ratings, and updating or deleting reviews, with foreign key constraints ensuring data integrity. The API uses JWT-based authentication to protect sensitive operations.
@@ -124,4 +127,24 @@ All API endpoints are prefixed with `/api`. Authentication is required for write
 
 ## ER Diagram
 - https://github.com/Akshat120/Book-Review-API/blob/main/ER_Diagram.png
+
+## Postman Examples 
+
+- GET http://localhost:3000/ <img width="1076" alt="Screenshot 2025-05-31 at 1 17 25 AM" src="https://github.com/user-attachments/assets/12dd60df-cc1b-4d5a-8bc7-5da6148cba39" />
+
+- POST http://localhost:3000/signup <img width="1058" alt="Screenshot 2025-05-31 at 1 18 14 AM" src="https://github.com/user-attachments/assets/472dbbc3-5278-4449-bc53-af3aa274897c" />
+
+- POST http://localhost:3000/login <img width="1076" alt="Screenshot 2025-05-31 at 1 19 07 AM" src="https://github.com/user-attachments/assets/0c3ffb16-28f6-4590-95c1-9497502ad04c" />
+
+- POST http://localhost:3000/api/books <img width="1085" alt="Screenshot 2025-05-31 at 1 25 20 AM" src="https://github.com/user-attachments/assets/946bb031-4e19-4227-817e-eae3a4caf8ba" />
+
+- GET http://localhost:3000/api/books <img width="1075" alt="Screenshot 2025-05-31 at 1 19 33 AM" src="https://github.com/user-attachments/assets/37ba8656-1366-4088-8a87-575f2da289c4" />
+
+- GET http://localhost:3000/api/books <img width="1079" alt="Screenshot 2025-05-31 at 1 28 34 AM" src="https://github.com/user-attachments/assets/712205b7-df7b-4589-8bef-122945bf45b7" />
+
+## Assumption 
+- All pagination query supports upto 10 items in a single page.
+
+
+
 
