@@ -108,7 +108,7 @@ All API endpoints are prefixed with `/api`. Authentication is required for write
 | DELETE | `/api/reviews/:reviewId`              | Delete a review                          | N/A                                              |
 
 ### Status Codes
-- **200 OK**: Successful request with response body (e.g., GET, PATCH).
+- **200 OK**: Successful request with response body (e.g., GET, PUT).
 - **201 Created**: Resource created (e.g., POST).
 - **400 Bad Request**: Invalid or missing input.
 - **401 Unauthorized**: Missing or invalid authentication token.
