@@ -24,9 +24,9 @@ export async function getBookController(req,res) {
 
     const {page, author, genre } = req.query
 
-    const pageNum = parseInt(page, 10);
+    let pageNum = parseInt(page, 10);
     if(isNaN(pageNum) || pageNum<1) {
-        return res.status(400).json({ message: 'Bad Page Number!' });
+        pageNum = 1
     }
 
     const books = await filterBook(pageNum, author, genre)
@@ -43,9 +43,9 @@ export async function getBookByIdController(req,res) {
     }
 
     const page = req.query.page
-    const pageNum = parseInt(page, 10);
+    let pageNum = parseInt(page, 10);
     if(isNaN(pageNum) || pageNum<1) {
-        return res.status(400).json({ message: 'Bad Page Number!' });
+        pageNum = 1
     }
 
     const book = await getBookByID(idNum)
